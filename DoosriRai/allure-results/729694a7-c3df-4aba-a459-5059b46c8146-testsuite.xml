@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639995970540' stop='1639996149165'>
+    <name>Registration</name>
+    <title>Registration</title>
+    <test-cases>
+        <test-case start='1639995970552' status='passed' stop='1639996018618'>
+            <name>Registration with Doctor with valid credentials</name>
+            <title>Registration with Doctor with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639996018618' status='passed' stop='1639996039459'>
+            <name>Registration with patient with valid credentials</name>
+            <title>Registration with patient with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639996039460' status='passed' stop='1639996072450'>
+            <name>Registration with Doctor with Invalid credentials</name>
+            <title>Registration with Doctor with Invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639996072451' status='passed' stop='1639996095402'>
+            <name>Registration with patient with Invalid credentials</name>
+            <title>Registration with patient with Invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639996095402' status='passed' stop='1639996126028'>
+            <name>Registration with Doctor with Existing Email address</name>
+            <title>Registration with Doctor with Existing Email address</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639996126028' status='passed' stop='1639996149164'>
+            <name>Registration with patient with Existing Email address</name>
+            <title>Registration with patient with Existing Email address</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

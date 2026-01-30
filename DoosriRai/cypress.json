@@ -1,0 +1,8 @@
+{
+  "testFiles": "**/*.feature",
+  "ignoreTestFiles": ["*.js", "*.ts", "*.md"],
+  "video": true,
+  "projectId": "71pb25",
+  "viewportHeight": 1080,
+  "viewportWidth": 1920
+}

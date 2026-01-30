@@ -1,0 +1,511 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 8,
+    "passes": 8,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-18T05:42:58.262Z",
+    "end": "2022-03-18T05:53:57.315Z",
+    "duration": 295718,
+    "testsRegistered": 8,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a292492-a4f9-4266-ba13-3e96bd73dd9f",
+      "title": "",
+      "fullFile": "cypress/integration/Dashboard.feature",
+      "file": "cypress/integration/Dashboard.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7b4ef63e-abd7-4938-a684-18da55bff2ab",
+          "title": "Dashboard",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Dashboard Total Contacts Today filter count functionaly working or not",
+              "fullTitle": "Dashboard Dashboard Total Contacts Today filter count functionaly working or not",
+              "timedOut": null,
+              "duration": 29517,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "790a3466-bb0f-4a97-a0f9-0fbef9ee10fb",
+              "parentUUID": "7b4ef63e-abd7-4938-a684-18da55bff2ab",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "790a3466-bb0f-4a97-a0f9-0fbef9ee10fb"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 29517,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "394cb0ee-1b1c-4ced-9ca6-81d18e323ce6",
+      "title": "",
+      "fullFile": "cypress/integration/Newsfeed.feature",
+      "file": "cypress/integration/Newsfeed.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8362f6e0-81bb-445d-9576-ab65f2884da3",
+          "title": "Newsfeed",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check That Reload button in newsfeed is functional or not",
+              "fullTitle": "Newsfeed Check That Reload button in newsfeed is functional or not",
+              "timedOut": null,
+              "duration": 34636,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "434a6d14-35cb-4b46-8f34-5908e7e2c1a2",
+              "parentUUID": "8362f6e0-81bb-445d-9576-ab65f2884da3",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "434a6d14-35cb-4b46-8f34-5908e7e2c1a2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 34636,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "6ea1df5f-78c6-49a8-b18d-b25315bd7512",
+      "title": "",
+      "fullFile": "cypress/integration/Notification.feature",
+      "file": "cypress/integration/Notification.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8ef2e1c5-1c91-49f2-857c-57afb88ababc",
+          "title": "Notification",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check total count of notification on notification page is showing or not",
+              "fullTitle": "Notification Check total count of notification on notification page is showing or not",
+              "timedOut": null,
+              "duration": 41558,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "43cc848f-668b-4301-8d30-9d77dea269b3",
+              "parentUUID": "8ef2e1c5-1c91-49f2-857c-57afb88ababc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "43cc848f-668b-4301-8d30-9d77dea269b3"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 41558,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d7da7363-fa62-441e-8c28-bb4afa8b745d",
+      "title": "",
+      "fullFile": "cypress/integration/Settings.feature",
+      "file": "cypress/integration/Settings.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a6c6e490-2ec7-4ed8-aa03-374e9c71f37e",
+          "title": "Setting",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check the behavior of page on clicking Edit in settings page",
+              "fullTitle": "Setting Check the behavior of page on clicking Edit in settings page",
+              "timedOut": null,
+              "duration": 40882,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "f7077935-0be6-4523-a2a9-ff414c57e7cc",
+              "parentUUID": "a6c6e490-2ec7-4ed8-aa03-374e9c71f37e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f7077935-0be6-4523-a2a9-ff414c57e7cc"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 40882,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "c69fd4fb-7f49-4d73-9f62-95e3b4c7f1ca",
+      "title": "",
+      "fullFile": "cypress/integration/Signup.feature",
+      "file": "cypress/integration/Signup.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f1072995-b367-4248-95b6-1e7a96aec317",
+          "title": "Signup",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check validations appears while fields are empty",
+              "fullTitle": "Signup Check validations appears while fields are empty",
+              "timedOut": null,
+              "duration": 18758,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "7764d30c-a82d-4460-843b-ba3164ca7d1f",
+              "parentUUID": "f1072995-b367-4248-95b6-1e7a96aec317",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "7764d30c-a82d-4460-843b-ba3164ca7d1f"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 18758,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "21b5c959-2caf-44cf-b072-6e6835ce1ce5",
+      "title": "",
+      "fullFile": "cypress/integration/Tags.feature",
+      "file": "cypress/integration/Tags.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "0e139d11-2de0-4896-ace0-35510d46a8d8",
+          "title": "Tags",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Check create button is enable when Tag form is empty",
+              "fullTitle": "Tags Check create button is enable when Tag form is empty",
+              "timedOut": null,
+              "duration": 19064,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "da57e5bf-8909-4995-bd9c-d6747acc3720",
+              "parentUUID": "0e139d11-2de0-4896-ace0-35510d46a8d8",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "da57e5bf-8909-4995-bd9c-d6747acc3720"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 19064,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "d3ff6fce-b251-47aa-a19f-0af08b5589bb",
+      "title": "",
+      "fullFile": "cypress/integration/Tasks.feature",
+      "file": "cypress/integration/Tasks.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "742e8985-94f0-47b0-a2cb-6b1b2b83388a",
+          "title": "Task",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "How to create a Task in list View",
+              "fullTitle": "Task How to create a Task in list View",
+              "timedOut": null,
+              "duration": 47639,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-screenshots\",\n  \"value\": [\n    [\n      {\n        \"title\": \"Failed screenshot\",\n        \"value\": \"/Tasks.feature/Task -- How to create a Task in list View (failed).png\"\n      }\n    ],\n    []\n  ]\n}",
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "679b6c0e-86e4-4535-8b1d-c85a8a93fce5",
+              "parentUUID": "742e8985-94f0-47b0-a2cb-6b1b2b83388a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "679b6c0e-86e4-4535-8b1d-c85a8a93fce5"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 47639,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    },
+    {
+      "uuid": "8df40692-a1fa-43fe-8c59-0c1240ccca37",
+      "title": "",
+      "fullFile": "cypress/integration/Campaign.feature",
+      "file": "cypress/integration/Campaign.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "2b0945f0-b139-483b-bfcd-bc62a9a7a221",
+          "title": "Campaign",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Verify that campaign detail is opening",
+              "fullTitle": "Campaign Verify that campaign detail is opening",
+              "timedOut": null,
+              "duration": 63664,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "6dc02409-196c-4635-9213-c8210beae227",
+              "parentUUID": "2b0945f0-b139-483b-bfcd-bc62a9a7a221",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "6dc02409-196c-4635-9213-c8210beae227"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 63664,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.1.1"
+    }
+  }
+}

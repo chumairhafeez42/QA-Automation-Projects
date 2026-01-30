@@ -1,0 +1,6 @@
+{
+    "chromeWebSecurity" : false , 
+    "testFiles": "**/*.{feature,features}",
+    "supportFile": "cypress/support/commands.js",
+    "defaultCommandTimeout": 90000
+}

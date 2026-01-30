@@ -1,0 +1,22 @@
+{
+  "watchForFileChanges": false,
+  "testFiles": "**/*.feature",
+  "defaultCommandTimeout": 100000,
+  "pageLoadTimeout": 100000,
+  "responseTimeout": 100000,
+  "retries": {
+  
+    "runMode": 3,
+    "openMode": 2
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "charts": false,
+    "html": true,
+    "json": true,
+    "reportDir": "cypress/reports",
+    "reportFilename": "report",
+    "overwrite": true
+  },
+  "projectId": "ztyh7e"
+}

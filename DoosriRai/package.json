@@ -1,0 +1,32 @@
+{
+  "name": "doosrirai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run --reporter mocha-allure-reporter  --env allure=true ",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
+    "pretest": "npm run allure:clear",
+    "test": "npm run cy:run"
+  },
+  "author": "Huzaif",
+  "license": "ISC",
+  "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.19.5",
+    "allure-commandline": "^2.13.8",
+    "cucumber": "^6.0.5",
+    "cypress": "^9.2.0",
+    "cypress-cucumber-preprocessor": "^4.3.0",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "jshintConfig": {
+    "esversion": 6
+  }
+}

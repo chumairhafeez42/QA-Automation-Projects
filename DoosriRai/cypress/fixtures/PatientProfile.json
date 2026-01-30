@@ -1,0 +1,34 @@
+{
+  "patientOne": {
+    "FirstName": "patient",
+    "LastName": "One",
+    "UserName": "patientOne",
+    "Email": "patientOne@mailinator.com",
+    "DateOfBirth": "",
+    "Gender": "Male",
+    "Occupation": "Pakiatan",
+    "BloodGroup": "",
+    "Height": "6.3",
+    "AppointmentReminder": "",
+    "Weight": "80",
+    "Phone": "03001234567"
+  },
+
+  "patientTwo": {
+    "FirstName": "patient",
+    "LastName": "Two",
+    "UserName": "patientTwo",
+    "Email": "patientTwo@mailinator.com",
+    "DateOfBirth": "",
+    "Gender": "Female",
+    "Occupation": "Pakistan Updated",
+    "BloodGroup": "",
+    "Height": "5.3",
+    "AppointmentReminder": "",
+    "Weight": "120",
+    "Phone": "03007654321"
+  },
+  "DeshboardData": {
+    "patientSideHeading": "My Appointments"
+  }
+}

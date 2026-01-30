@@ -1,0 +1,23 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639995521419' stop='1639995594486'>
+    <name>Exmple</name>
+    <title>Exmple</title>
+    <test-cases>
+        <test-case start='1639995521437' status='passed' stop='1639995564408'>
+            <name>Changing profile setting of patients profile</name>
+            <title>Changing profile setting of patients profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995564409' status='passed' stop='1639995594486'>
+            <name>Changing account setting of Patient profile</name>
+            <title>Changing account setting of Patient profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
