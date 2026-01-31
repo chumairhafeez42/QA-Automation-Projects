@@ -1,0 +1,20 @@
+{
+    "watchForFileChanges": false,
+    "testFiles": "**/*.feature",
+    "defaultCommandTimeout": 200000,
+    "pageLoadTimeout": 200000,
+    "responseTimeout": 200000,
+    "retries": {
+    
+      "runMode": 3,
+      "openMode": 3
+    },
+      "reporter": "../node_modules/mochawesome/src/mochawesome.js",
+      "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+    "projectId": "51fet1"
+  }

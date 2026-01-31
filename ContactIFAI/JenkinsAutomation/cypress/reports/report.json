@@ -1,0 +1,272 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 8,
+    "passes": 0,
+    "pending": 0,
+    "failures": 8,
+    "start": "2021-11-15T17:11:56.625Z",
+    "end": "2021-11-15T18:30:23.850Z",
+    "duration": 4707225,
+    "testsRegistered": 8,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "981564ce-d655-460f-be77-c44def8a41fc",
+      "title": "",
+      "fullFile": "cypress/integration/Tasks.feature",
+      "file": "cypress/integration/Tasks.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b4b0ceb8-35da-496a-a718-620a654739cf",
+          "title": "Task",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "How to create a Task in list View",
+              "fullTitle": "Task How to create a Task in list View",
+              "timedOut": null,
+              "duration": 145544,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "CypressError: Timed out retrying after 100000ms: `cy.type()` failed because this element is not visible:\n\n`<input autocomplete=\"off\" placeholder=\"Task name\" maxlength=\"500\" type=\"text\" id=\"summary\" class=\"ant-input\" value=\"\">`\n\nThis element `<input#summary.ant-input>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div style=\"display: flex; justify-content: space-between; padding: 20px 34px; width: 100%; border-bottom: 1px solid lightgray; position: sticky; top: 0px; background: white; z-index: 1;\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with",
+                "estack": "CypressError: Timed out retrying after 100000ms: `cy.type()` failed because this element is not visible:\n\n`<input autocomplete=\"off\" placeholder=\"Task name\" maxlength=\"500\" type=\"text\" id=\"summary\" class=\"ant-input\" value=\"\">`\n\nThis element `<input#summary.ant-input>` is not visible because it has CSS property: `position: fixed` and it's being covered by another element:\n\n`<div style=\"display: flex; justify-content: space-between; padding: 20px 34px; width: 100%; border-bottom: 1px solid lightgray; position: sticky; top: 0px; background: white; z-index: 1;\">...</div>`\n\nFix this problem, or use `{force: true}` to disable error checking.\n\nhttps://on.cypress.io/element-cannot-be-interacted-with\n    at runVisibilityCheck (https://contactif.ai/__cypress/runner/cypress_runner.js:162670:85)\n    at $Cy.ensureNotHiddenByAncestors (https://contactif.ai/__cypress/runner/cypress_runner.js:162690:14)\n    at runAllChecks (https://contactif.ai/__cypress/runner/cypress_runner.js:149937:12)\n    at retryActionability (https://contactif.ai/__cypress/runner/cypress_runner.js:149960:16)\n    at tryCatcher (https://contactif.ai/__cypress/runner/cypress_runner.js:13212:23)\n    at Function.Promise.attempt.Promise.try (https://contactif.ai/__cypress/runner/cypress_runner.js:10486:29)\n    at tryFn (https://contactif.ai/__cypress/runner/cypress_runner.js:167495:61)\n    at whenStable (https://contactif.ai/__cypress/runner/cypress_runner.js:167534:14)\n    at https://contactif.ai/__cypress/runner/cypress_runner.js:167021:18\n    at tryCatcher (https://contactif.ai/__cypress/runner/cypress_runner.js:13212:23)\n    at Promise._settlePromiseFromHandler (https://contactif.ai/__cypress/runner/cypress_runner.js:11147:31)\n    at Promise._settlePromise (https://contactif.ai/__cypress/runner/cypress_runner.js:11204:18)\n    at Promise._settlePromise0 (https://contactif.ai/__cypress/runner/cypress_runner.js:11249:10)\n    at Promise._settlePromises (https://contactif.ai/__cypress/runner/cypress_runner.js:11329:18)\n    at Promise._fulfill (https://contactif.ai/__cypress/runner/cypress_runner.js:11273:18)\n    at https://contactif.ai/__cypress/runner/cypress_runner.js:12887:46\nFrom Your Spec Code:\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:331:31)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "fb100257-02c8-43da-8c24-cc9010997a45",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that task in list view on selecting open status filter from dropdown",
+              "fullTitle": "Task Check that task in list view on selecting open status filter from dropdown",
+              "timedOut": null,
+              "duration": 141046,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:371:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "92c9a220-8228-4ff9-9e80-c137af74dbe5",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that Task status change by clicking on Mark as complete",
+              "fullTitle": "Task Check that Task status change by clicking on Mark as complete",
+              "timedOut": null,
+              "duration": 141293,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:384:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "adbabbe0-f859-4959-a8ea-31c811e9b23f",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that task in list view on selecting completed status filter from dropdown",
+              "fullTitle": "Task Check that task in list view on selecting completed status filter from dropdown",
+              "timedOut": null,
+              "duration": 141965,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:406:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "1a254134-e167-496a-bbc9-8843ded3ec1d",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that task in list view on selecting overdue statsus filter from dropdown",
+              "fullTitle": "Task Check that task in list view on selecting overdue statsus filter from dropdown",
+              "timedOut": null,
+              "duration": 142051,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:437:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "eaa1b706-7f4b-4aa3-ad75-28b41fed7b77",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that task in list view on selecting All Task filter from dropdown",
+              "fullTitle": "Task Check that task in list view on selecting All Task filter from dropdown",
+              "timedOut": null,
+              "duration": 143290,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:419:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "82093db8-cd94-4f04-b833-8b9f6950a157",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that in tasks module search functionality is working fine or not",
+              "fullTitle": "Task Check that in tasks module search functionality is working fine or not",
+              "timedOut": null,
+              "duration": 143364,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:450:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "8fbbd310-c6f6-4c6e-ac77-47bfde7a84af",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check that Task is deleted or not",
+              "fullTitle": "Task Check that Task is deleted or not",
+              "timedOut": null,
+              "duration": 143365,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() =>\n    resolveAndRunAfterHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.",
+                "estack": "AssertionError: Timed out retrying after 100000ms: Expected to find content: 'Test Task' but never did.\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:464:28)\n    at Context.resolveAndRunStepDefinition (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:12248:29)\n    at Context.eval (https://contactif.ai/__cypress/tests?p=cypress/integration/Tasks.feature:11592:35)",
+                "diff": null
+              },
+              "uuid": "4a51091e-6c33-494d-b7c2-283793efa23e",
+              "parentUUID": "b4b0ceb8-35da-496a-a718-620a654739cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "fb100257-02c8-43da-8c24-cc9010997a45",
+            "92c9a220-8228-4ff9-9e80-c137af74dbe5",
+            "adbabbe0-f859-4959-a8ea-31c811e9b23f",
+            "1a254134-e167-496a-bbc9-8843ded3ec1d",
+            "eaa1b706-7f4b-4aa3-ad75-28b41fed7b77",
+            "82093db8-cd94-4f04-b833-8b9f6950a157",
+            "8fbbd310-c6f6-4c6e-ac77-47bfde7a84af",
+            "4a51091e-6c33-494d-b7c2-283793efa23e"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1141918,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": false,
+        "html": true,
+        "json": true,
+        "reportDir": "cypress/reports",
+        "reportFilename": "report",
+        "overwrite": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

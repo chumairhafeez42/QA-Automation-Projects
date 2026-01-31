@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639995751636' stop='1639995862887'>
+    <name>ProfileSettingDoctor</name>
+    <title>ProfileSettingDoctor</title>
+    <test-cases>
+        <test-case start='1639995751647' status='passed' stop='1639995792963'>
+            <name>Changing profile setting of Doctor profile</name>
+            <title>Changing profile setting of Doctor profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995792964' status='passed' stop='1639995821081'>
+            <name>Changing account setting of Doctor profile</name>
+            <title>Changing account setting of Doctor profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995821082' status='passed' stop='1639995842496'>
+            <name>Adding Education in Doctor profile</name>
+            <title>Adding Education in Doctor profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995842497' status='passed' stop='1639995862886'>
+            <name>Adding Experience in Doctor profile</name>
+            <title>Adding Experience in Doctor profile</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

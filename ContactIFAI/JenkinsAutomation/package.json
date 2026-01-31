@@ -1,0 +1,30 @@
+{
+  "name": "cypresautomation",
+  "version": "1.0.0",
+  "description": "This is my first Cypress Automation Test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/optimusprimal1/CypressTests.git"
+  },
+  "author": "OptimusPrimal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/optimusprimal1/CypressTests/issues"
+  },
+  "homepage": "https://github.com/optimusprimal1/CypressTests#readme",
+  "devDependencies": {
+    "cypress": "^6.2.1",
+    "cypress-cucumber-preprocessor": "^4.0.1",
+    "cypress-mochawesome-reporter": "^2.2.0"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}

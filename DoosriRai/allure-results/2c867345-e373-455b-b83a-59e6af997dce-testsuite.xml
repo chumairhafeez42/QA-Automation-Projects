@@ -1,0 +1,55 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1639995612866' stop='1639995729894'>
+    <name>Login</name>
+    <title>Login</title>
+    <test-cases>
+        <test-case start='1639995612892' status='passed' stop='1639995646533'>
+            <name>Login with Doctor with valid credentials</name>
+            <title>Login with Doctor with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995646534' status='passed' stop='1639995665702'>
+            <name>Login with patient with valid credentials</name>
+            <title>Login with patient with valid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995665704' status='passed' stop='1639995681106'>
+            <name>Login with Doctor with valid credentials from  home page</name>
+            <title>Login with Doctor with valid credentials from  home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995681108' status='passed' stop='1639995697410'>
+            <name>Login with patient with valid credentials from  home page</name>
+            <title>Login with patient with valid credentials from  home page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995697412' status='passed' stop='1639995714884'>
+            <name>Login with patient with Invalid credentials</name>
+            <title>Login with patient with Invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1639995714884' status='passed' stop='1639995729894'>
+            <name>Login with Doctor with Invalid credentials</name>
+            <title>Login with Doctor with Invalid credentials</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
