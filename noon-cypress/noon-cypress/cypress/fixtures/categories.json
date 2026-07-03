@@ -1,0 +1,17 @@
+[
+  { "name": "Electronics", "slug": "electronics", "path": "/uae-en/electronics/" },
+  { "name": "Beauty & Fragrance", "slug": "beauty", "path": "/uae-en/beauty/" },
+  { "name": "Home & Kitchen", "slug": "home-kitchen", "path": "/uae-en/home-kitchen/" },
+  { "name": "Grocery", "slug": "grocery", "path": "/uae-en/noon-supermarket/" },
+  { "name": "Men's Fashion", "slug": "fashion-men", "path": "/uae-en/fashion-men/" },
+  { "name": "Women's Fashion", "slug": "fashion-women", "path": "/uae-en/fashion-women/" },
+  { "name": "Baby", "slug": "baby", "path": "/uae-en/baby/" },
+  { "name": "Toys", "slug": "toys", "path": "/uae-en/toys/" },
+  { "name": "Kids' Fashion", "slug": "kids-fashion", "path": "/uae-en/fashion/view-all-kids-clothing/" },
+  { "name": "Sports & Outdoors", "slug": "sports-outdoors", "path": "/uae-en/sports-outdoors/" },
+  { "name": "Health & Nutrition", "slug": "health-nutrition", "path": "/uae-en/health-personal-care/" },
+  { "name": "Stationery", "slug": "stationery", "path": "/uae-en/stationery/" },
+  { "name": "Books & Media", "slug": "books-media", "path": "/uae-en/book-store/" },
+  { "name": "Automotive", "slug": "automotive", "path": "/uae-en/automotive-store/" },
+  { "name": "Food", "slug": "food", "path": "/uae-en/", "external": true, "externalHost": "food.noon.com" }
+]

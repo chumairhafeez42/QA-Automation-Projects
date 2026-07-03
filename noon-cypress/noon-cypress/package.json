@@ -1,0 +1,14 @@
+{
+  "name": "noon-uae-cypress-automation",
+  "version": "1.0.0",
+  "description": "Cypress automation suite for noon.com UAE (https://www.noon.com/uae-en/) covering homepage, header/navigation, search, cart/wishlist gating, and every top-level category.",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:categories": "cypress run --spec cypress/e2e/categories.cy.js",
+    "cy:run:headless-chrome": "cypress run --browser chrome --headless"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "carrefour-uae-cypress-cucumber",
+  "version": "1.0.0",
+  "description": "Cypress + Cucumber (BDD) automation suite for carrefouruae.com",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:homepage": "cypress run --spec \"cypress/e2e/features/homepage.feature\"",
+    "cy:run:search": "cypress run --spec \"cypress/e2e/features/search.feature\"",
+    "cy:run:categories": "cypress run --spec \"cypress/e2e/features/categories.feature\"",
+    "report:generate": "node cypress/support/generate-report.js"
+  },
+  "devDependencies": {
+    "cypress": "^13.15.0",
+    "@badeball/cypress-cucumber-preprocessor": "^20.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "esbuild": "^0.23.0"
+  }
+}

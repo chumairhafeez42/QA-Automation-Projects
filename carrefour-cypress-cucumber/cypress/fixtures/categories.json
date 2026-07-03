@@ -1,0 +1,32 @@
+{
+  "categories": [
+    { "name": "Low Prices", "path": "/mafuae/en/c/everyday-low-prices" },
+    { "name": "Dairy & Eggs", "path": "/mafuae/en/n/c/clp_dairy-breakfast-new" },
+    { "name": "Fruit", "path": "/mafuae/en/c/F11660100" },
+    { "name": "Vegetables", "path": "/mafuae/en/c/F11660500" },
+    { "name": "Pantry Staples", "path": "/mafuae/en/n/c/clp_kitchen-staples-new" },
+    { "name": "Meat & Seafood", "path": "/mafuae/en/n/c/clp_meat-poultry-seafood" },
+    { "name": "Beverages", "path": "/mafuae/en/n/c/clp_circular-icon-beverages" },
+    { "name": "Snacks", "path": "/mafuae/en/n/c/clp_circular-icon-snacks-new" },
+    { "name": "Frozen Food", "path": "/mafuae/en/n/c/clp_circular-icon-frozen-food" },
+    { "name": "Bakery", "path": "/mafuae/en/n/c/clp_dairy-breakfast-bakery" },
+    { "name": "Fashion", "path": "/mafuae/en/n/c/clp_fashionstore" },
+    { "name": "Healthy & Organic", "path": "/mafuae/en/n/c/clp_promo-carrefour-bio" },
+    { "name": "Health & Fitness", "path": "/mafuae/en/n/c/clp_Health-store" },
+    { "name": "Pet Supplies", "path": "/mafuae/en/n/c/clp_pet-store" },
+    { "name": "Large Appliances", "path": "/mafuae/en/c/NF4100000" },
+    { "name": "Small Appliances", "path": "/mafuae/en/c/NF4040000" },
+    { "name": "Mobiles & Wearables", "path": "/mafuae/en/n/c/clp_smartphones-more" },
+    { "name": "TVs & Projectors", "path": "/mafuae/en/n/c/clp_tv" },
+    { "name": "Laptops", "path": "/mafuae/en/n/c/clp_laptop-video-games" },
+    { "name": "Cameras", "path": "/mafuae/en/c/NF4020000" },
+    { "name": "Gaming", "path": "/mafuae/en/n/c/clp_NF4090000" },
+    { "name": "Cleaning & Laundry", "path": "/mafuae/en/n/c/clp_cleaning-household-new" },
+    { "name": "Beauty", "path": "/mafuae/en/n/c/clp_beauty-personal-care" },
+    { "name": "Baby Care", "path": "/mafuae/en/n/c/clp_baby-care" },
+    { "name": "Home & Garden", "path": "/mafuae/en/n/c/clp_circular-icon-home-and-garden" },
+    { "name": "Fragrances", "path": "/mafuae/en/n/c/clp_perfume-store" },
+    { "name": "Toys & Outdoor", "path": "/mafuae/en/n/c/clp_toys-2025" },
+    { "name": "Luggage", "path": "/mafuae/en/c/NF5020000" }
+  ]
+}
