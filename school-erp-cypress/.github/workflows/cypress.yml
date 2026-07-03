@@ -1,0 +1,38 @@
+name: Cypress E2E Tests
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main, develop]
+  workflow_dispatch:
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v6
+        with:
+          browser: chrome
+          build: npm install
+        env:
+          CYPRESS_adminUsername: ${{ secrets.SCHOOL_ADMIN_USERNAME }}
+          CYPRESS_adminPassword: ${{ secrets.SCHOOL_ADMIN_PASSWORD }}
+
+      - name: Upload screenshots on failure
+        uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: cypress-screenshots
+          path: cypress/screenshots
+
+      - name: Upload test report
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-report
+          path: cypress/reports

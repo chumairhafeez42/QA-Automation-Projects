@@ -1,0 +1,25 @@
+{
+  "name": "school-erp-cypress",
+  "version": "1.0.0",
+  "description": "End-to-end Cypress automation suite for School Management Software (Login, Admission, Attendance, Fees, Reports).",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:headless": "cypress run --headless",
+    "test:login": "cypress run --spec cypress/e2e/school/01_login.cy.js",
+    "test:admission": "cypress run --spec cypress/e2e/school/02_student_admission.cy.js",
+    "test:teacher": "cypress run --spec cypress/e2e/school/03_teacher_management.cy.js",
+    "test:class": "cypress run --spec cypress/e2e/school/04_class_management.cy.js",
+    "test:attendance": "cypress run --spec cypress/e2e/school/05_attendance.cy.js",
+    "test:fees": "cypress run --spec cypress/e2e/school/06_fee_collection.cy.js",
+    "test:reports": "cypress run --spec cypress/e2e/school/07_reports.cy.js",
+    "test:logout": "cypress run --spec cypress/e2e/school/08_logout.cy.js",
+    "test:all": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "@faker-js/faker": "^8.4.1",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

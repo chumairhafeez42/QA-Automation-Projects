@@ -1,0 +1,25 @@
+{
+  "name": "propertyfinder-cypress",
+  "version": "1.0.0",
+  "description": "Cypress E2E automation suite for propertyfinder.ae (search, filters, listings, area guides, mortgage calculator, agent finder).",
+  "scripts": {
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "test:home": "cypress run --spec cypress/e2e/propertyfinder/01_homepage.cy.js",
+    "test:search": "cypress run --spec cypress/e2e/propertyfinder/02_search_and_filters.cy.js",
+    "test:buy": "cypress run --spec cypress/e2e/propertyfinder/03_buy_flow.cy.js",
+    "test:rent": "cypress run --spec cypress/e2e/propertyfinder/04_rent_flow.cy.js",
+    "test:listing": "cypress run --spec cypress/e2e/propertyfinder/05_listing_details.cy.js",
+    "test:newprojects": "cypress run --spec cypress/e2e/propertyfinder/06_new_projects.cy.js",
+    "test:areainsights": "cypress run --spec cypress/e2e/propertyfinder/07_area_insights.cy.js",
+    "test:mortgage": "cypress run --spec cypress/e2e/propertyfinder/08_mortgage_calculator.cy.js",
+    "test:agents": "cypress run --spec cypress/e2e/propertyfinder/09_find_agents.cy.js",
+    "test:nav": "cypress run --spec cypress/e2e/propertyfinder/10_navigation_and_footer.cy.js",
+    "test:all": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.0",
+    "cypress-mochawesome-reporter": "^3.8.2"
+  }
+}

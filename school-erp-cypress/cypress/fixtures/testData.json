@@ -1,0 +1,15 @@
+{
+  "admin": {
+    "username": "admin@example.com",
+    "password": "ChangeMe123!"
+  },
+  "invalidUser": {
+    "username": "wronguser@example.com",
+    "password": "WrongPass123!"
+  },
+  "classOptions": ["Class 1", "Class 2", "Class 3", "Class 4", "Class 5"],
+  "sectionOptions": ["A", "B", "C"],
+  "feeTypes": ["Tuition Fee", "Admission Fee", "Exam Fee", "Transport Fee"],
+  "paymentModes": ["Cash", "Card", "Bank Transfer", "Online"],
+  "reportTypes": ["Attendance Report", "Fee Collection Report", "Student List Report", "Exam Result Report"]
+}
