@@ -1,0 +1,22 @@
+{
+  "name": "hospital-management-automation",
+  "version": "1.0.0",
+  "description": "Expert-level Gherkin/Cucumber + Playwright automation suite for a Hospital Management System (signup, signin, appointments, doctor ratings, admin rights, medicine stock).",
+  "private": true,
+  "scripts": {
+    "serve": "http-server ./app -p 8080 -s",
+    "pretest": "npx playwright install --with-deps chromium",
+    "test": "start-server-and-test serve http://127.0.0.1:8080 test:cucumber",
+    "test:cucumber": "cucumber-js",
+    "test:headed": "cross-env HEADLESS=false npm run test",
+    "test:tag": "cucumber-js --tags"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.47.0",
+    "cross-env": "^7.0.3",
+    "http-server": "^14.1.1",
+    "playwright": "^1.47.0",
+    "start-server-and-test": "^2.0.8"
+  }
+}

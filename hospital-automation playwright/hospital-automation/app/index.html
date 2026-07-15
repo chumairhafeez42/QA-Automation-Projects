@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>MediCare Hospital Management System</title>
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>MediCare HMS</h1>
+    <nav id="navbar" data-testid="navbar" style="display:none;">
+      <span id="welcomeMsg" data-testid="welcome-msg"></span>
+      <button data-testid="nav-appointments" data-view="appointments">Appointments</button>
+      <button data-testid="nav-doctors" data-view="doctors">Doctors & Ratings</button>
+      <button data-testid="nav-medicine" data-view="medicine" style="display:none;">Medicine Stock</button>
+      <button data-testid="nav-admin" data-view="admin" style="display:none;">Admin Panel</button>
+      <button data-testid="logout-btn">Logout</button>
+    </nav>
+  </header>
+
+  <main id="app">
+
+    <!-- SIGNUP -->
+    <section id="view-signup" class="view">
+      <h2>Sign Up</h2>
+      <form id="signupForm" data-testid="signup-form">
+        <input data-testid="signup-name" name="name" placeholder="Full Name" />
+        <input data-testid="signup-email" name="email" placeholder="Email" />
+        <input data-testid="signup-password" name="password" type="password" placeholder="Password" />
+        <input data-testid="signup-confirm" name="confirm" type="password" placeholder="Confirm Password" />
+        <select data-testid="signup-role" name="role">
+          <option value="patient">Patient</option>
+          <option value="admin">Admin</option>
+        </select>
+        <button data-testid="signup-submit" type="submit">Create Account</button>
+      </form>
+      <p data-testid="signup-message" class="message"></p>
+      <a href="#" data-testid="go-to-signin" data-view="signin">Already have an account? Sign in</a>
+    </section>
+
+    <!-- SIGNIN -->
+    <section id="view-signin" class="view" style="display:none;">
+      <h2>Sign In</h2>
+      <form id="signinForm" data-testid="signin-form">
+        <input data-testid="signin-email" name="email" placeholder="Email" />
+        <input data-testid="signin-password" name="password" type="password" placeholder="Password" />
+        <button data-testid="signin-submit" type="submit">Sign In</button>
+      </form>
+      <p data-testid="signin-message" class="message"></p>
+      <a href="#" data-testid="go-to-signup" data-view="signup">New here? Sign up</a>
+    </section>
+
+    <!-- APPOINTMENTS -->
+    <section id="view-appointments" class="view" style="display:none;">
+      <h2>Book an Appointment</h2>
+      <form id="appointmentForm" data-testid="appointment-form">
+        <select data-testid="appointment-doctor" name="doctorId"></select>
+        <input data-testid="appointment-date" name="date" type="date" />
+        <input data-testid="appointment-time" name="time" type="time" />
+        <button data-testid="appointment-submit" type="submit">Book Appointment</button>
+      </form>
+      <p data-testid="appointment-message" class="message"></p>
+      <h3>My Appointments</h3>
+      <table data-testid="appointment-table">
+        <thead><tr><th>Doctor</th><th>Date</th><th>Time</th><th>Status</th><th>Action</th></tr></thead>
+        <tbody id="appointmentList" data-testid="appointment-list"></tbody>
+      </table>
+    </section>
+
+    <!-- DOCTORS & RATINGS -->
+    <section id="view-doctors" class="view" style="display:none;">
+      <h2>Doctors</h2>
+      <div id="doctorList" data-testid="doctor-list"></div>
+    </section>
+
+    <!-- MEDICINE STOCK (admin only) -->
+    <section id="view-medicine" class="view" style="display:none;">
+      <h2>Medicine Stock</h2>
+      <form id="medicineForm" data-testid="medicine-form">
+        <input data-testid="medicine-name" name="name" placeholder="Medicine Name" />
+        <input data-testid="medicine-stock" name="stock" type="number" placeholder="Stock Qty" />
+        <input data-testid="medicine-price" name="price" type="number" placeholder="Price" />
+        <button data-testid="medicine-submit" type="submit">Add / Update Medicine</button>
+      </form>
+      <p data-testid="medicine-message" class="message"></p>
+      <table data-testid="medicine-table">
+        <thead><tr><th>Name</th><th>Stock</th><th>Price</th><th>Status</th></tr></thead>
+        <tbody id="medicineList" data-testid="medicine-list"></tbody>
+      </table>
+    </section>
+
+    <!-- ADMIN PANEL (admin only) -->
+    <section id="view-admin" class="view" style="display:none;">
+      <h2>Admin Panel</h2>
+      <p data-testid="admin-denied" class="message" style="display:none;">Access denied. Admins only.</p>
+      <div data-testid="admin-content">
+        <h3>All Users</h3>
+        <table data-testid="user-table">
+          <thead><tr><th>Name</th><th>Email</th><th>Role</th></tr></thead>
+          <tbody id="userList" data-testid="user-list"></tbody>
+        </table>
+        <h3>All Appointments</h3>
+        <table data-testid="all-appointment-table">
+          <thead><tr><th>Patient</th><th>Doctor</th><th>Date</th><th>Status</th></tr></thead>
+          <tbody id="allAppointmentList" data-testid="all-appointment-list"></tbody>
+        </table>
+        <h3>Manage Doctors</h3>
+        <form id="doctorForm" data-testid="doctor-form">
+          <input data-testid="doctor-name" name="name" placeholder="Doctor Name" />
+          <input data-testid="doctor-spec" name="spec" placeholder="Specialization" />
+          <button data-testid="doctor-submit" type="submit">Add Doctor</button>
+        </form>
+        <p data-testid="admin-message" class="message"></p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

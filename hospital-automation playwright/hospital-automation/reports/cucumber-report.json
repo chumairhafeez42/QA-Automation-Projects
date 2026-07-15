@@ -1,0 +1,3968 @@
+[
+  {
+    "description": "  As an administrator\n  I want exclusive access to manage users, doctors, and appointments\n  So that only authorized staff can control system-wide data",
+    "elements": [
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;non-admin-user-cannot-access-the-admin-panel",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Non-admin user cannot access the admin panel",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4636347900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41308200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "a user already exists with email \"regularuser@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 737631999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "I have signed in as \"regularuser@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30001871600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I navigate to the admin panel",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the admin access denied message \"Access denied. Admins only.\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233256700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 10
+          },
+          {
+            "name": "@security",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;non-admin-user-cannot-access-the-medicine-stock-management-page",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Non-admin user cannot access the medicine stock management page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 744127399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43641899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "a user already exists with email \"regularuser2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 434005199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I have signed in as \"regularuser2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30009038199,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "I should see the medicine message \"Access denied. Admins only.\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 110279399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 17
+          },
+          {
+            "name": "@security",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;admin-can-view-the-full-list-of-registered-users",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Admin can view the full list of registered users",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 511247099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28127999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 26,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30015207599,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 27,
+            "name": "I navigate to the admin panel",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 28,
+            "name": "the user table should contain a row for email \"admin@medicare.com\" with role \"admin\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:19"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 124441800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 24
+          },
+          {
+            "name": "@positive",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;admin-can-view-all-appointments-booked-across-all-patients",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Admin can view all appointments booked across all patients",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 523800899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33011799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 32,
+            "name": "a user already exists with email \"patientA@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 188860899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I have signed in as \"patientA@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30014512100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I have booked an appointment with doctor \"Dr. Sarah Khan\" on \"2026-09-01\" at \"10:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I log out",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I navigate to the admin panel",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "the all-appointments table should contain a row for patient \"patientA@example.com\" and doctor \"Dr. Sarah Khan\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:24"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 122570700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 30
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;admin-can-add-a-new-doctor-to-the-system",
+        "keyword": "Scenario",
+        "line": 41,
+        "name": "Admin can add a new doctor to the system",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 514911499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28389699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 42,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30005777100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "I navigate to the admin panel",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I add a new doctor named \"Dr. Bilal Ahmed\" with specialization \"Neurologist\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I should see the admin message \"Doctor added successfully.\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "the doctors page should list a doctor named \"Dr. Bilal Ahmed\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:29"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 244850199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 40
+          },
+          {
+            "name": "@regression",
+            "line": 40
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "admin-rights-&-access-control;admin-cannot-add-a-doctor-with-missing-details",
+        "keyword": "Scenario",
+        "line": 49,
+        "name": "Admin cannot add a doctor with missing details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 629868599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31492500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 50,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30010223399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I navigate to the admin panel",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:82"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "I add a new doctor named \"\" with specialization \"\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 53,
+            "name": "I should see the admin message \"Doctor name and specialization are required.\"",
+            "match": {
+              "location": "features\\step_definitions\\admin.steps.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216608399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@admin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 48
+          },
+          {
+            "name": "@regression",
+            "line": 48
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "admin-rights-&-access-control",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Admin Rights & Access Control",
+    "tags": [
+      {
+        "name": "@admin",
+        "line": 1
+      }
+    ],
+    "uri": "features\\admin.feature"
+  },
+  {
+    "description": "  As a signed-in patient\n  I want to book, view, and cancel appointments with doctors\n  So that I can manage my healthcare visits",
+    "elements": [
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;successfully-book-an-appointment-with-a-doctor",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Successfully book an appointment with a doctor",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 698008999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40287299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 286179100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30001154999,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 15,
+            "name": "I book an appointment with doctor \"Dr. Sarah Khan\" on \"2026-08-10\" at \"10:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I should see the appointment message \"Appointment booked successfully!\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "the appointment list should contain a row for doctor \"Dr. Sarah Khan\" on \"2026-08-10\" with status \"Confirmed\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 180595700
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 13
+          },
+          {
+            "name": "@positive",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;patient-views-their-list-of-booked-appointments",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Patient views their list of booked appointments",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 528417400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35676399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 177342600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30013034199,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 21,
+            "name": "I have booked an appointment with doctor \"Dr. Ali Raza\" on \"2026-08-11\" at \"09:30\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 22,
+            "name": "I view my appointments",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:32"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "the appointment list should contain a row for doctor \"Dr. Ali Raza\" on \"2026-08-11\" with status \"Confirmed\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 284519499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 19
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;patient-cancels-a-previously-booked-appointment",
+        "keyword": "Scenario",
+        "line": 26,
+        "name": "Patient cancels a previously booked appointment",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 708986299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37281400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 234957900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30001882899,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 27,
+            "name": "I have booked an appointment with doctor \"Dr. Emily Chen\" on \"2026-08-12\" at \"14:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I cancel the appointment with doctor \"Dr. Emily Chen\" on \"2026-08-12\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:36"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "the appointment list should contain a row for doctor \"Dr. Emily Chen\" on \"2026-08-12\" with status \"Cancelled\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:46"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 201648999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 25
+          },
+          {
+            "name": "@regression",
+            "line": 25
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;booking-fails-when-date-or-time-is-missing",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Booking fails when date or time is missing",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 827530500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50240300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 404080599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30012186899,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I attempt to book an appointment with doctor \"Dr. Sarah Khan\" without selecting a date or time",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:26"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see the appointment message \"Please select both date and time.\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 189576399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 31
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;booking-fails-for-a-date-in-the-past",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Booking fails for a date in the past",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 723603599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48732700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 283061500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30012563200,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I book an appointment with doctor \"Dr. Sarah Khan\" on \"2020-01-01\" at \"10:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should see the appointment message \"Cannot book an appointment in the past.\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 107907999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 36
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-appointment-booking;booking-fails-when-the-doctor-already-has-a-confirmed-appointment-at-that-slot",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Booking fails when the doctor already has a confirmed appointment at that slot",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 484874899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26009299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 176764399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I have signed in as \"patient2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30008097699,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I am on the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:49"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "I have booked an appointment with doctor \"Dr. Sarah Khan\" on \"2026-08-15\" at \"11:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I book an appointment with doctor \"Dr. Sarah Khan\" on \"2026-08-15\" at \"11:00\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:18"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I should see the appointment message \"This doctor is already booked at that date and time.\"",
+            "match": {
+              "location": "features\\step_definitions\\appointments.steps.js:42"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 279260799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@appointments",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 41
+          },
+          {
+            "name": "@regression",
+            "line": 41
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "doctor-appointment-booking",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Doctor Appointment Booking",
+    "tags": [
+      {
+        "name": "@appointments",
+        "line": 1
+      }
+    ],
+    "uri": "features\\appointments.feature"
+  },
+  {
+    "description": "  As a signed-in patient\n  I want to view and submit ratings for doctors\n  So that I can share feedback and evaluate doctor quality",
+    "elements": [
+      {
+        "description": "",
+        "id": "doctor-ratings;visitor-can-view-existing-average-doctor-ratings-without-signing-in",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Visitor can view existing average doctor ratings without signing in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 668183199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42043599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "I am on the doctors page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 97822199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "the average rating for \"Dr. Sarah Khan\" should be \"4.5\"",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55706299
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 181858100
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratings",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-ratings;doctor-with-no-ratings-shows-a-placeholder-message",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Doctor with no ratings shows a placeholder message",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 669722999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34994799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 17,
+            "name": "I am on the doctors page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 67266600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "the average rating for \"Dr. Emily Chen\" should be \"No ratings yet\"",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32574400
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 141104800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratings",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 15
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-ratings;signed-in-patient-submits-a-rating-for-a-doctor",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Signed-in patient submits a rating for a doctor",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 651943299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36277500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "a user already exists with email \"rater@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 247963899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I have signed in as \"rater@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30007378099,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I am on the doctors page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:53"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I rate doctor \"Dr. Ali Raza\" with \"5\" stars",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "the average rating for \"Dr. Ali Raza\" should be \"4.0\"",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 147100199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratings",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 20
+          },
+          {
+            "name": "@positive",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-ratings;anonymous-user-is-redirected-to-signin-when-attempting-to-rate-a-doctor",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Anonymous user is redirected to signin when attempting to rate a doctor",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 572971300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33186700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I am on the doctors page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:53"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52328900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I rate doctor \"Dr. Sarah Khan\" with \"3\" stars",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90861999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see the signin message \"Please sign in to rate a doctor.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10587100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I should be redirected to the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:98"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8772499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109452400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratings",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 28
+          },
+          {
+            "name": "@regression",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "doctor-ratings;doctor-average-rating-updates-after-multiple-patients-submit-ratings",
+        "keyword": "Scenario",
+        "line": 36,
+        "name": "Doctor average rating updates after multiple patients submit ratings",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 534518700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35802199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 37,
+            "name": "a user already exists with email \"rater2@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 210048100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I have signed in as \"rater2@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30010050999,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I am on the doctors page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:53"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I rate doctor \"Dr. Emily Chen\" with \"4\" stars",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:13"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "the average rating for \"Dr. Emily Chen\" should be \"4.0\"",
+            "match": {
+              "location": "features\\step_definitions\\ratings.steps.js:21"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 141783800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ratings",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 35
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "doctor-ratings",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Doctor Ratings",
+    "tags": [
+      {
+        "name": "@ratings",
+        "line": 1
+      }
+    ],
+    "uri": "features\\doctor_ratings.feature"
+  },
+  {
+    "description": "  As an administrator\n  I want to add and update medicine stock levels\n  So that the hospital pharmacy inventory stays accurate and up to date",
+    "elements": [
+      {
+        "description": "",
+        "id": "medicine-stock-management;admin-adds-a-new-medicine-to-the-stock",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Admin adds a new medicine to the stock",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 790831399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44144499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30003858399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I add or update medicine \"Ibuprofen\" with stock \"40\" and price \"8\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the medicine message \"Medicine stock updated.\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "the medicine table should contain a row for \"Ibuprofen\" with stock \"40\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 252206799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@medicine",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@positive",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "medicine-stock-management;admin-updates-the-stock-quantity-of-an-existing-medicine",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Admin updates the stock quantity of an existing medicine",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 929946300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62315799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30016837600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I add or update medicine \"Paracetamol\" with stock \"100\" and price \"5\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the medicine message \"Medicine stock updated.\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the medicine table should contain a row for \"Paracetamol\" with stock \"100\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:15"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 272827400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@medicine",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "medicine-stock-management;medicine-with-low-stock-is-flagged-with-a-\"low-stock\"-status",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Medicine with low stock is flagged with a \"Low Stock\" status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 965953700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 77974799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30015690000,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I add or update medicine \"Amoxicillin\" with stock \"5\" and price \"12\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "the stock status for \"Amoxicillin\" should be \"Low Stock\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 192488200
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@medicine",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 24
+          },
+          {
+            "name": "@regression",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "medicine-stock-management;medicine-with-sufficient-stock-is-flagged-with-an-\"ok\"-status",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Medicine with sufficient stock is flagged with an \"OK\" status",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 727009799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47929699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30004384100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I add or update medicine \"Vitamin C\" with stock \"60\" and price \"3\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "the stock status for \"Vitamin C\" should be \"OK\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:20"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 134695999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@medicine",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 29
+          },
+          {
+            "name": "@regression",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "medicine-stock-management;adding-a-medicine-fails-when-required-fields-are-missing",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Adding a medicine fails when required fields are missing",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 632544999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35101200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I have signed in as \"admin@medicare.com\" with password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30008032599,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I navigate to the medicine stock page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:86"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I add or update medicine \"\" with stock \"\" and price \"\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:4"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I should see the medicine message \"All fields are required and must be valid.\"",
+            "match": {
+              "location": "features\\step_definitions\\medicine.steps.js:11"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 137751099
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@medicine",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "medicine-stock-management",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Medicine Stock Management",
+    "tags": [
+      {
+        "name": "@medicine",
+        "line": 1
+      }
+    ],
+    "uri": "features\\medicine_stock.feature"
+  },
+  {
+    "description": "  As a registered user\n  I want to sign in to the MediCare Hospital Management System\n  So that I can access appointments, ratings, and admin features",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-signin;successful-signin-with-valid-patient-credentials",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Successful signin with valid patient credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 572321100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35475600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 332922699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7035600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "I sign in with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 141781500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I should see the signin message \"Login successful.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14634899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I should be redirected to the appointments page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8986099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 336206499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 12
+          },
+          {
+            "name": "@positive",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;successful-signin-with-valid-admin-credentials",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Successful signin with valid admin credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 785483800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39158000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 222109799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5606800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "I sign in with email \"admin@medicare.com\" and password \"Admin@123\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106419099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I should see the signin message \"Login successful.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9430499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "the navbar should show the admin panel link",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:102"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 11615800
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 121368000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 18
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;signin-fails-with-an-incorrect-password",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "Signin fails with an incorrect password",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 535938100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29582599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 215072500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6362299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "I sign in with email \"patient1@example.com\" and password \"WrongPassword\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96631500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 27,
+            "name": "I should see the signin message \"Invalid email or password.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13683500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 166886199
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;signin-fails-with-an-unregistered-email",
+        "keyword": "Scenario",
+        "line": 30,
+        "name": "Signin fails with an unregistered email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 548207300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33867800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 243192199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7503499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I sign in with email \"nobody@example.com\" and password \"Whatever1!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 106263500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "I should see the signin message \"Invalid email or password.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14264099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 139346400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 29
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;signin-fails-when-fields-are-left-empty",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Signin fails when fields are left empty",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 515601999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32932200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 213220800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5785900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 36,
+            "name": "I sign in with email \"\" and password \"\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 80627199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "I should see the signin message \"Email and password are required.\"",
+            "match": {
+              "location": "features\\step_definitions\\signin.steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9770600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 109872699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 34
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;signed-in-patient-does-not-see-admin-only-navigation-links",
+        "keyword": "Scenario",
+        "line": 40,
+        "name": "Signed-in patient does not see admin-only navigation links",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 510878600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41046099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 209666599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10959100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 41,
+            "name": "I sign in with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:78"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 88790799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 42,
+            "name": "the navbar should not show the admin panel link",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:106"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7913500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "the navbar should not show the medicine stock link",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:110"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6910600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 130652000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 39
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signin;user-can-log-out-after-signing-in",
+        "keyword": "Scenario",
+        "line": 46,
+        "name": "User can log out after signing in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 553932999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40659999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "a user already exists with email \"patient1@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 236650400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I am on the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6233699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 47,
+            "name": "I have signed in as \"patient1@example.com\" with password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:73"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30005002100,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 48,
+            "name": "I log out",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:90"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "I should be redirected to the signin page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:98"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 148036800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signin",
+            "line": 1
+          },
+          {
+            "name": "@regression",
+            "line": 45
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-signin",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User Signin",
+    "tags": [
+      {
+        "name": "@signin",
+        "line": 1
+      }
+    ],
+    "uri": "features\\signin.feature"
+  },
+  {
+    "description": "  As a new user of the MediCare Hospital Management System\n  I want to create an account\n  So that I can book appointments and use the system",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-signup;successful-signup-with-valid-patient-details",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Successful signup with valid patient details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 554477899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35038300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30007573199,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I sign up with name \"John Doe\", email \"john.doe@example.com\", password \"Passw0rd!\", confirm password \"Passw0rd!\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "I should see the signup message \"Account created successfully! Please sign in.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 140083600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@smoke",
+            "line": 11
+          },
+          {
+            "name": "@positive",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;successful-signup-with-valid-admin-details",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Successful signup with valid admin details",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 716569099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38817000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30008642800,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "I sign up with name \"Jane Admin\", email \"jane.admin@example.com\", password \"Adm1nPass!\", confirm password \"Adm1nPass!\" and role \"admin\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "I should see the signup message \"Account created successfully! Please sign in.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 154051000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@positive",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;signup-fails-when-passwords-do-not-match",
+        "keyword": "Scenario",
+        "line": 22,
+        "name": "Signup fails when passwords do not match",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 559750999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39828099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30008369500,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 23,
+            "name": "I sign up with name \"Mismatch User\", email \"mismatch@example.com\", password \"Passw0rd!\", confirm password \"Different1!\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "I should see the signup message \"Passwords do not match.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151355999
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 21
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;signup-fails-with-an-invalid-email-format",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Signup fails with an invalid email format",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 502850299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31961000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30007271700,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 28,
+            "name": "I sign up with name \"Bad Email\", email \"not-an-email\", password \"Passw0rd!\", confirm password \"Passw0rd!\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I should see the signup message \"Please enter a valid email address.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 163442599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;signup-fails-when-required-fields-are-missing",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "Signup fails when required fields are missing",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 527596999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31765099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30007787600,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "I sign up with name \"\", email \"\", password \"\", confirm password \"\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "I should see the signup message \"All fields are required.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 117108400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 31
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;signup-fails-when-the-password-is-too-short",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Signup fails when the password is too short",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 466737899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29282100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30010798399,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 38,
+            "name": "I sign up with name \"Short Pass\", email \"shortpass@example.com\", password \"abc\", confirm password \"abc\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "I should see the signup message \"Password must be at least 6 characters.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 151415799
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 36
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-signup;signup-fails-when-the-email-is-already-registered",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Signup fails when the email is already registered",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 637945400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 8,
+            "name": "the hospital management system database is reset",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37896599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I am on the signup page",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:31"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 30015510799,
+              "error_message": "Error: function timed out, ensure the promise resolves within 30000 milliseconds\n    at Timeout.<anonymous> (C:\\Users\\AGICO\\Downloads\\hospital-automation playwright\\hospital-automation\\node_modules\\@cucumber\\cucumber\\lib\\time.js:54:20)\n    at listOnTimeout (node:internal/timers:605:17)\n    at process.processTimers (node:internal/timers:541:7)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "a user already exists with email \"duplicate@example.com\" and password \"Passw0rd!\"",
+            "match": {
+              "location": "features\\step_definitions\\common.steps.js:68"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 44,
+            "name": "I sign up with name \"Duplicate User\", email \"duplicate@example.com\", password \"Passw0rd!\", confirm password \"Passw0rd!\" and role \"patient\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:5"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "I should see the signup message \"An account with this email already exists.\"",
+            "match": {
+              "location": "features\\step_definitions\\signup.steps.js:10"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 537858400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@signup",
+            "line": 1
+          },
+          {
+            "name": "@negative",
+            "line": 41
+          },
+          {
+            "name": "@regression",
+            "line": 41
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-signup",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "User Signup",
+    "tags": [
+      {
+        "name": "@signup",
+        "line": 1
+      }
+    ],
+    "uri": "features\\signup.feature"
+  }
+]
