@@ -1,0 +1,24 @@
+{
+  "name": "foodchain-management-automation",
+  "version": "1.0.0",
+  "description": "End-to-end BDD test automation for the Foodchain Management System using Cucumber.js (Gherkin) and Playwright",
+  "scripts": {
+    "test": "cucumber-js",
+    "test:tags": "cucumber-js --tags",
+    "test:signin": "cucumber-js --tags @signin",
+    "test:signup": "cucumber-js --tags @signup",
+    "test:appointments": "cucumber-js --tags @appointments",
+    "test:ratings": "cucumber-js --tags @ratings",
+    "test:admin": "cucumber-js --tags @admin",
+    "test:stocks": "cucumber-js --tags @stocks",
+    "test:smoke": "cucumber-js --tags @smoke",
+    "report": "node support/generate-report.js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "^1.47.0",
+    "playwright": "^1.47.0",
+    "multiple-cucumber-html-reporter": "^3.7.0",
+    "dotenv": "^16.4.5"
+  }
+}
