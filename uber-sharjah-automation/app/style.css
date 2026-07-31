@@ -1,0 +1,29 @@
+* { box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { margin: 0; background: #0f1115; color: #eee; }
+.app-header {
+  background: #111827; padding: 16px 24px; display: flex;
+  justify-content: space-between; align-items: center;
+  border-bottom: 2px solid #f9c74f;
+}
+.app-header h1 { margin: 0; font-size: 22px; color: #f9c74f; }
+.screen {
+  max-width: 460px; margin: 24px auto; padding: 24px;
+  background: #1a1d24; border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.hidden { display: none !important; }
+label { display: block; margin-top: 14px; margin-bottom: 4px; font-size: 13px; color: #aaa; }
+input, select {
+  width: 100%; padding: 10px; border-radius: 8px; border: 1px solid #333;
+  background: #24272f; color: #fff; font-size: 14px;
+}
+button {
+  margin-top: 20px; width: 100%; padding: 12px; border: none; border-radius: 8px;
+  background: #f9c74f; color: #111; font-weight: bold; font-size: 15px; cursor: pointer;
+}
+button:disabled { background: #555; color: #999; cursor: not-allowed; }
+#cancelBtn { background: #ef4444; color: #fff; }
+.error { color: #ef4444; margin-top: 10px; }
+.summary { margin-top: 16px; padding: 12px; background: #24272f; border-radius: 8px; }
+.driver-card { background: #24272f; padding: 12px; border-radius: 8px; margin: 14px 0; }
+.gps-panel { margin-top: 12px; font-size: 14px; color: #ccc; }
+canvas { background: #12151b; border-radius: 8px; display: block; margin: 12px auto; border: 1px solid #333; }

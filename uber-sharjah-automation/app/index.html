@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>RideSharjah - Taxi Booking</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>🚕 RideSharjah</h1>
+    <span id="userBadge" data-testid="user-badge" class="hidden"></span>
+  </header>
+
+  <!-- LOGIN SCREEN -->
+  <section id="loginScreen" data-testid="login-screen" class="screen">
+    <h2>Login</h2>
+    <label for="nameInput">Full Name</label>
+    <input id="nameInput" data-testid="name-input" type="text" placeholder="e.g. Ahmed Khan" />
+    <label for="phoneInput">Phone Number</label>
+    <input id="phoneInput" data-testid="phone-input" type="tel" placeholder="+971 5X XXX XXXX" />
+    <button id="loginBtn" data-testid="login-btn">Login</button>
+    <p id="loginError" data-testid="login-error" class="error hidden"></p>
+  </section>
+
+  <!-- BOOKING SCREEN -->
+  <section id="bookingScreen" data-testid="booking-screen" class="screen hidden">
+    <h2>Book a Ride</h2>
+
+    <label for="pickupSelect">Pickup Location</label>
+    <select id="pickupSelect" data-testid="pickup-select"></select>
+
+    <label for="dropoffSelect">Drop-off Location</label>
+    <select id="dropoffSelect" data-testid="dropoff-select"></select>
+
+    <label for="vehicleSelect">Vehicle Type</label>
+    <select id="vehicleSelect" data-testid="vehicle-select">
+      <option value="economy" data-rate="1.8">Economy</option>
+      <option value="comfort" data-rate="2.4">Comfort</option>
+      <option value="xl" data-rate="3.1">XL (6 seats)</option>
+    </select>
+
+    <div id="tripSummary" data-testid="trip-summary" class="summary hidden">
+      <p>Distance: <span id="distanceValue" data-testid="distance-value"></span> km</p>
+      <p>Estimated Fare: <span id="fareValue" data-testid="fare-value"></span> AED</p>
+    </div>
+
+    <button id="bookRideBtn" data-testid="book-ride-btn" disabled>Book Ride</button>
+    <p id="bookingError" data-testid="booking-error" class="error hidden"></p>
+  </section>
+
+  <!-- TRACKING SCREEN -->
+  <section id="trackingScreen" data-testid="tracking-screen" class="screen hidden">
+    <h2>Ride Status: <span id="rideStatus" data-testid="ride-status">Searching for driver...</span></h2>
+
+    <div id="driverInfo" data-testid="driver-info" class="driver-card hidden">
+      <p>Driver: <span id="driverName" data-testid="driver-name"></span></p>
+      <p>Vehicle: <span id="driverVehicle" data-testid="driver-vehicle"></span></p>
+      <p>Plate: <span id="driverPlate" data-testid="driver-plate"></span></p>
+      <p>Rating: <span id="driverRating" data-testid="driver-rating"></span> ⭐</p>
+    </div>
+
+    <canvas id="mapCanvas" data-testid="map-canvas" width="420" height="320"></canvas>
+
+    <div class="gps-panel">
+      <p>Live GPS: <span id="gpsCoords" data-testid="gps-coords"></span></p>
+      <p>Progress: <span id="progressPct" data-testid="progress-pct">0</span>%</p>
+      <p>ETA: <span id="etaValue" data-testid="eta-value">--</span> min</p>
+    </div>
+
+    <button id="cancelBtn" data-testid="cancel-btn">Cancel Ride</button>
+  </section>
+
+  <!-- COMPLETED SCREEN -->
+  <section id="completedScreen" data-testid="completed-screen" class="screen hidden">
+    <h2>✅ Trip Completed</h2>
+    <p>Total Fare: <span id="finalFare" data-testid="final-fare"></span> AED</p>
+    <p>Distance Traveled: <span id="finalDistance" data-testid="final-distance"></span> km</p>
+    <button id="newRideBtn" data-testid="new-ride-btn">Book Another Ride</button>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

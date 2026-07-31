@@ -1,0 +1,16 @@
+{
+  "name": "ridesharjah-automation",
+  "version": "1.0.0",
+  "description": "Playwright automation suite for a mock Sharjah taxi booking app (booking, locations, GPS tracking)",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "serve": "http-server ./app -p 8080 -s"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.47.0",
+    "http-server": "^14.1.1"
+  }
+}
